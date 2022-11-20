@@ -17,3 +17,8 @@ const double paddingDft = 16.0;
 // ===== Images =====
 
 String onboardImg = 'assets/images/onboaredPic.png';
+String menuIcon = 'assets/images/menu-icon.png';
+String avaterImg = 'assets/images/avater.png';
+
+// ===== Media Quary =====
+

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'screens/onboarding_page.dart';
-import './constants/colors.dart';
+import 'constants/hl_constants.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,9 +20,12 @@ class MyApp extends StatelessWidget {
       title: 'Health Fitness',
       theme: ThemeData(
         primarySwatch: Colors.green,
+        backgroundColor: hlBgc,
         appBarTheme: const AppBarTheme(
+          backgroundColor: hlBgc,
+          foregroundColor: Colors.black,
+          centerTitle: true,
           iconTheme: IconThemeData(color: Colors.black),
-          color: hlBgc,
           elevation: 0,
         ),
         textTheme: const TextTheme(
