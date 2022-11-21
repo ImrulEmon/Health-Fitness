@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../constants/hl_constants.dart';
 
 class CircleAvaterWidget extends StatelessWidget {
   const CircleAvaterWidget({super.key});
@@ -10,7 +11,7 @@ class CircleAvaterWidget extends StatelessWidget {
       width: 40,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(20),
-        child: Image.asset('assets/images/avatar.png'),
+        child: Image.asset(avaterImg),
       ),
     );
   }

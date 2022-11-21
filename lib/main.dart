@@ -28,12 +28,18 @@ class MyApp extends StatelessWidget {
           iconTheme: IconThemeData(color: Colors.black),
           elevation: 0,
         ),
-        textTheme: const TextTheme(
-          headline4: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: Colors.black,
-          ),
-        ),
+        textTheme: const TextTheme().copyWith(
+            headline4: const TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+            ),
+            headline3: const TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+            ),
+            subtitle1: const TextStyle(
+              color: Colors.grey,
+            )),
       ),
       home: const OnboardingPage(),
     );
