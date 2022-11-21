@@ -4,6 +4,7 @@ import 'package:health_fitness/widgets/search_widget.dart';
 
 import '../constants/hl_constants.dart';
 import '../widgets/circle_avater_widget.dart';
+import '../widgets/category_card_widget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -52,7 +53,7 @@ class HomePage extends StatelessWidget {
               padding: const EdgeInsets.all(paddingDft),
               decoration: BoxDecoration(
                 color: kLightBlue,
-                borderRadius: BorderRadius.circular(20.0),
+                borderRadius: BorderRadius.circular(24.0),
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -62,7 +63,7 @@ class HomePage extends StatelessWidget {
                       Text(
                         "Today's\nactivity",
                         style: GoogleFonts.nunito(
-                          textStyle: textTheme.headline3,
+                          textStyle: textTheme.headline4,
                         ),
                       ),
                       const SizedBox(height: paddingDft),
@@ -104,10 +105,15 @@ class HomePage extends StatelessWidget {
             //----- Recomandation Card -----
             Card(
               elevation: 5.0,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20),
+              ),
               child: ListTile(
-                leading: FittedBox(
-                  child: Image.asset(recomandImg),
+                tileColor: kRecCardBgc,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
                 ),
+                leading: Image.asset(recomandImg),
                 title: Text(
                   'Yoga Class',
                   style: Theme.of(context).textTheme.headline6,
@@ -132,8 +138,53 @@ class HomePage extends StatelessWidget {
               ),
             ),
             // ====== Recommandation End =====
-
+            const SizedBox(height: paddingDft),
             // ====== Category Start =====
+            //----- Category Title -----
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'Categories',
+                  style: textTheme.headline5,
+                ),
+                const Text(
+                  'See all',
+                  style: TextStyle(
+                    color: kDeepBlue,
+                    fontSize: 16.0,
+                  ),
+                ),
+              ],
+            ),
+            //----- Scrollable Category Cards -----
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  CategoryCardWidget(
+                    title: 'Warm up',
+                    bgColor: kLightBlue,
+                    bgImg: warmUpImg,
+                  ),
+                  CategoryCardWidget(
+                    title: 'Yoga',
+                    bgColor: kWhite,
+                    bgImg: yogaImg,
+                  ),
+                  CategoryCardWidget(
+                    title: 'Squart',
+                    bgImg: warmUpImg,
+                    bgColor: kLightRed,
+                  ),
+                  CategoryCardWidget(
+                    title: 'Lunge',
+                    bgColor: kDeepBlue,
+                    bgImg: lungeImg,
+                  ),
+                ],
+              ),
+            ),
             // ====== Category End =====
           ],
         ),
