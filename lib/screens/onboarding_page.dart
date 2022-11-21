@@ -1,6 +1,5 @@
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
-import 'package:health_fitness/screens/home_page.dart';
 import '../constants/hl_constants.dart';
 
 class OnboardingPage extends StatelessWidget {
@@ -42,10 +41,7 @@ class OnboardingPage extends StatelessWidget {
           ),
           GestureDetector(
             onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const HomePage()),
-              );
+              Navigator.of(context).pushNamed('/home');
             },
             child: Container(
               padding: const EdgeInsets.symmetric(

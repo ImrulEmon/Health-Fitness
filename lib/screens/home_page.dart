@@ -177,7 +177,7 @@ class HomePage extends StatelessWidget {
                     ),
                     CategoryCardWidget(
                       title: 'Squart',
-                      bgImg: warmUpImg,
+                      bgImg: squartImg,
                       bgColor: kLightRed,
                     ),
                     CategoryCardWidget(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../constants/hl_constants.dart';
 
 class NavigationBarWidget extends StatefulWidget {
   const NavigationBarWidget({super.key});
@@ -18,7 +19,7 @@ class _NavigationBarWidgetState extends State<NavigationBarWidget> {
         });
       },
       currentIndex: myIndex,
-      selectedItemColor: Colors.blue,
+      selectedItemColor: kDeepBlue,
       unselectedItemColor: Colors.black,
       items: const [
         BottomNavigationBarItem(
@@ -34,7 +35,7 @@ class _NavigationBarWidgetState extends State<NavigationBarWidget> {
           label: "People",
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.settings),
+          icon: Icon(Icons.settings_outlined),
           label: "Settings",
         ),
       ],

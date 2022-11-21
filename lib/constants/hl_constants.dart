@@ -20,6 +20,7 @@ const double paddingDft = 16.0;
 // ===== Images =====
 
 String onboardImg = 'assets/images/onboaredPic.png';
+
 String menuIcon = 'assets/images/menu-icon.png';
 String avaterImg = 'assets/images/avater.png';
 String legImg = 'assets/images/legImg.png';
@@ -28,6 +29,10 @@ String warmUpImg = 'assets/images/catWarmUp.png';
 String yogaImg = 'assets/images/catYoga.png';
 String squartImg = 'assets/images/catSquart.png';
 String lungeImg = 'assets/images/catLunge.png';
+
+String exrWarmUpImg = 'assets/images/exrWarmUp.png';
+
+
 
 // ===== Media Quary =====
 

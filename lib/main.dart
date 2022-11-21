@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:health_fitness/screens/home_page.dart';
 
 import 'screens/onboarding_page.dart';
 import 'constants/hl_constants.dart';
@@ -42,6 +43,7 @@ class MyApp extends StatelessWidget {
             )),
       ),
       home: const OnboardingPage(),
+      routes: {'/home': ((_) => const HomePage())},
     );
   }
 }
