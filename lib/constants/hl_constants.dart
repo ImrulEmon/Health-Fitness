@@ -20,6 +20,7 @@ String onboardImg = 'assets/images/onboaredPic.png';
 String menuIcon = 'assets/images/menu-icon.png';
 String avaterImg = 'assets/images/avater.png';
 String legImg = 'assets/images/legImg.png';
+String recomandImg = 'assets/images/yogaRecomand.png';
 
 // ===== Media Quary =====
 

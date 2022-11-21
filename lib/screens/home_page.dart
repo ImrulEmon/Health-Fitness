@@ -17,44 +17,37 @@ class HomePage extends StatelessWidget {
         leading: Image.asset(menuIcon),
         title: const Text(
           'Hello, Adam Smith',
-          style: TextStyle(
-            fontFamily: 'Inter',
-          ),
+          style: TextStyle(fontFamily: 'Inter'),
         ),
-        actions: const [
-          CircleAvaterWidget(),
-          SizedBox(
-            width: paddingDft,
-          )
-        ],
+        actions: const [CircleAvaterWidget(), SizedBox(width: paddingDft)],
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: paddingDft),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(
-              height: paddingDft * 1.5,
-            ),
+            const SizedBox(height: paddingDft * 1.5),
             const Text(
               'Find Your',
               style: TextStyle(
                 color: Colors.black,
-                fontSize: paddingDft * 2.25,
+                fontSize: paddingDft * 1.5,
               ),
             ),
             const Text(
               'Workout Class',
               style: TextStyle(
                 color: Colors.black,
-                fontSize: paddingDft * 2.25,
+                fontSize: paddingDft * 1.5,
                 fontWeight: FontWeight.bold,
               ),
             ),
+
+            // ===== Search Bar Widget=====
             const SearchWidget(),
-            const SizedBox(
-              height: paddingDft,
-            ),
+
+            // ===== Today's Activity Start =====
+            const SizedBox(height: paddingDft),
             Container(
               padding: const EdgeInsets.all(paddingDft),
               decoration: BoxDecoration(
@@ -72,16 +65,12 @@ class HomePage extends StatelessWidget {
                           textStyle: textTheme.headline3,
                         ),
                       ),
-                      const SizedBox(
-                        height: paddingDft,
-                      ),
+                      const SizedBox(height: paddingDft),
                       Text(
                         "8:00 AM - 1:30 PM",
                         style: textTheme.subtitle1,
                       ),
-                      const SizedBox(
-                        height: paddingDft,
-                      )
+                      const SizedBox(height: paddingDft)
                     ],
                   ),
                   Container(
@@ -91,6 +80,61 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
+            // ===== Today's Activity End =====
+            const SizedBox(height: paddingDft * 1.2),
+            // ====== Recommandation Start =====
+            //----- Recomandation Title -----
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'Recommandation Class',
+                  style: textTheme.headline5,
+                ),
+                const Text(
+                  'See all',
+                  style: TextStyle(
+                    color: kDeepBlue,
+                    fontSize: 16.0,
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: paddingDft * .4),
+            //----- Recomandation Card -----
+            Card(
+              elevation: 5.0,
+              child: ListTile(
+                leading: FittedBox(
+                  child: Image.asset(recomandImg),
+                ),
+                title: Text(
+                  'Yoga Class',
+                  style: Theme.of(context).textTheme.headline6,
+                ),
+                subtitle: const Text(
+                  'With Racheal Wisdom',
+                  style: TextStyle(color: Colors.grey),
+                ),
+                trailing: ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: hlBgc,
+                      elevation: 5.0,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(100),
+                      )),
+                  child: const Icon(
+                    Icons.favorite_outline,
+                    color: kDeepBlue,
+                  ),
+                ),
+              ),
+            ),
+            // ====== Recommandation End =====
+
+            // ====== Category Start =====
+            // ====== Category End =====
           ],
         ),
       ),
