@@ -1,16 +1,13 @@
-# health_fitness
+## `Health Fitness UI`
 
-A new Flutter project.
+A `Flutter UI` project.
 
-## Getting Started
+<p align="center">
 
-This project is a starting point for a Flutter application.
+<img alt="Starting Page" src="https://github.com/ImrulEmon/Health-Fitness/blob/main/OUTPUT/GetStarted.png" width="30%">
 
-A few resources to get you started if this is your first Flutter project:
+<img alt="Home Page" src="https://github.com/ImrulEmon/Health-Fitness/blob/main/OUTPUT/HomePage.png" width="30%">
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<img alt="Exercise Page" src="https://github.com/ImrulEmon/Health-Fitness/blob/main/OUTPUT/ExercisePage.png" width="30%">
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+</p>
