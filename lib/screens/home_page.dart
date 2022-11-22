@@ -16,7 +16,9 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        leading: Image.asset(menuIcon),
+        leading: Image.asset(
+          menuIcon,
+        ),
         title: const Text(
           'Hello, Adam Smith',
           style: TextStyle(fontFamily: 'Inter'),
@@ -127,7 +129,7 @@ class HomePage extends StatelessWidget {
                   trailing: ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                        backgroundColor: hlBgc,
+                        backgroundColor: kBgc,
                         elevation: 5.0,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(100),
@@ -193,8 +195,7 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
-      // ignore: prefer_const_constructors
-      bottomNavigationBar: NavigationBarWidget(),
+      bottomNavigationBar: const NavigationBarWidget(),
     );
   }
 }

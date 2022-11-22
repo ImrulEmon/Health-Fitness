@@ -23,6 +23,7 @@ class CategoryCardWidget extends StatelessWidget {
           MaterialPageRoute(
             builder: (context) => ExercisePage(
               title: title,
+              exrImg: bgImg,
             ),
           ),
         );

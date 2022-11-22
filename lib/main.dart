@@ -21,9 +21,9 @@ class MyApp extends StatelessWidget {
       title: 'Health Fitness',
       theme: ThemeData(
         primarySwatch: Colors.green,
-        backgroundColor: hlBgc,
+        backgroundColor: kBgc,
         appBarTheme: const AppBarTheme(
-          backgroundColor: hlBgc,
+          backgroundColor: kBgc,
           foregroundColor: Colors.black,
           centerTitle: true,
           iconTheme: IconThemeData(color: Colors.black),
