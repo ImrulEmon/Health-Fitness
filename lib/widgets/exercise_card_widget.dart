@@ -19,7 +19,7 @@ class ExerciseCardWidget extends StatelessWidget {
         style: Theme.of(context).textTheme.headline6,
       ),
       subtitle: Text(
-        exercise.time,
+        '${exercise.time} minutes',
         style: const TextStyle(color: Colors.grey),
       ),
       trailing: Image.asset(

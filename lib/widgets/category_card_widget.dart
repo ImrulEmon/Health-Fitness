@@ -7,11 +7,12 @@ class CategoryCardWidget extends StatelessWidget {
   final Color bgColor;
   final String bgImg;
 
-  const CategoryCardWidget(
-      {super.key,
-      required this.title,
-      required this.bgColor,
-      required this.bgImg});
+  const CategoryCardWidget({
+    super.key,
+    required this.title,
+    required this.bgColor,
+    required this.bgImg,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +38,6 @@ class CategoryCardWidget extends StatelessWidget {
             horizontal: paddingDft * .5, vertical: paddingDft),
         decoration: BoxDecoration(
           color: bgColor,
-          // border: Border.all(),
           borderRadius: BorderRadius.circular(24.0),
           boxShadow: [
             BoxShadow(

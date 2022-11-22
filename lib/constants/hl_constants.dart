@@ -27,6 +27,8 @@ String menuIcon = 'assets/images/menu-icon.png';
 String avaterImg = 'assets/images/avater.png';
 String legImg = 'assets/images/legImg.png';
 String recomandImg = 'assets/images/yogaRecomand.png';
+
+// ===== Category card img =====
 String warmUpImg = 'assets/images/catWarmUp.png';
 String yogaImg = 'assets/images/catYoga.png';
 String squartImg = 'assets/images/catSquart.png';
@@ -47,7 +49,11 @@ String exercise5Img = 'assets/images/exr5.png';
 String exercise6Img = 'assets/images/exr6.png';
 String exercise7Img = 'assets/images/exr7.png';
 
-
+// ===== home - category Exercise Images =====
+String bWarmUp = 'assets/images/exrW.png';
+String bYogaExr = 'assets/images/exrY.png';
+String bSquartExr = 'assets/images/exrS.png';
+String bLungeExr = 'assets/images/exrL.png';
 
 
 // ===== Media Quary =====
